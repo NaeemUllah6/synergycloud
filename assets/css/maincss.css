@@ -1550,6 +1550,12 @@ footer .contact {
         font-style: normal;
         font-weight: 700;
         line-height: 44.5px;
-        
+    }
+    .signup .container{
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    .signup .withcontainer{
+        padding: 0 40px;
     }
 }
