@@ -122,22 +122,27 @@ nav .hero-btn1 {
 
 @media (max-width: 768px) {
     .navbar-collapse {
-        display: none;
+        display: block;
+        /* Keep it block but control height */
         flex-direction: column;
         text-align: center;
-        background-color: rgb(156, 156, 156);
+        background-color: hsl(212.37deg 62.23% 21.67% / 83%);
         padding-top: 20px;
         position: absolute;
         top: 10;
         left: 0;
         right: 0;
         z-index: 5;
+        height: 0;
+        /* Initially collapsed */
+        overflow: hidden;
+        /* Hide content when collapsed */
+        transition: height 1s ease, opacity 1s ease;
         opacity: 0;
-
     }
 
     .navbar-collapse.active {
-        display: flex;
+        height: fit-content;
         opacity: 1;
     }
 
@@ -153,7 +158,7 @@ nav .hero-btn1 {
         height: 3px;
         position: relative;
         display: block;
-        transition: all 0.3s;
+        transition: all 1s;
     }
 
     .navbar-toggler-icon::before,
@@ -162,7 +167,7 @@ nav .hero-btn1 {
         background-color: #080a0b;
         width: 30px;
         height: 3px;
-
+        position: absolute;
     }
 
     .navbar-toggler-icon::before {
@@ -187,6 +192,7 @@ nav .hero-btn1 {
         margin: 10px 0;
     }
 }
+
 
 /* --------------Hero section ---------------- */
 
@@ -344,6 +350,11 @@ nav .hero-btn1 {
     font-weight: 700;
 
 
+}
+
+.card .dollarspecial {
+    font-size: 38px !important;
+    font-weight: 700;
 }
 
 .card .monthly {
@@ -596,10 +607,11 @@ nav .hero-btn1 {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1 solid black;
+    border-bottom: 1px solid black;
     outline: none !important;
     box-shadow: none !important;
     font-size: 23.176px !important;
+    background-color: transparent !important;
 
 }
 
@@ -691,12 +703,17 @@ footer .contact {
     background: #22739C;
 }
 
+.footer {
+    background-color: #f7f7f7;
+}
+
 /* //////////////////////Responsiveness////////////////////// */
 
 @media screen and (max-width: 1440px) {
     .missing {
         font-size: 18px;
     }
+
 
     .main_heading {
         font-size: 40.30px;
@@ -926,11 +943,12 @@ footer .contact {
         border-left: none !important;
         border-right: none !important;
 
+
     }
 
     .custom-input {
 
-        /* 100% */
+        font-weight: 500 !important;
     }
 
     .heading {
@@ -1323,7 +1341,7 @@ footer .contact {
 
         text-align: center;
         border-radius: 10px;
-        padding: 10px 30px;
+        padding: 18px 18px;
         padding-top: 5px;
         padding-bottom: 5px;
     }
@@ -1358,18 +1376,22 @@ footer .contact {
         padding-top: 45px;
         padding-bottom: 10px;
     }
-    .about .main_paragraph{
+
+    .about .main_paragraph {
         padding-top: 0px !important;
         padding-bottom: 0px !important;
     }
-    .about-flex{
+
+    .about-flex {
         gap: 0px;
     }
+
     .hero-main img {
         transform: translateY(35px) !important;
         width: 100% !;
     }
-    .cards{
+
+    .cards {
         padding: 20px 0;
     }
 
@@ -1403,8 +1425,9 @@ footer .contact {
         background-color: white;
         padding: 10px 0;
     }
+
     .signup button {
-       margin-top: 35px    
+        margin-top: 35px
     }
 
     .hero button {
@@ -1415,7 +1438,8 @@ footer .contact {
     .signup img {
         margin-top: 49px;
     }
-    .contactus .white-row{
+
+    .contactus .white-row {
         background-color: transparent !important;
     }
 
@@ -1460,23 +1484,72 @@ footer .contact {
     }
 
     .contactus {
-        padding: 40px 0;
+        padding: 0px 0;
+        background-color: white !important;
     }
 
     .footer img {
         margin: 0px !important;
     }
 
-    .custom-input {
-        color: #011C2A;
-        font-family: "DM Sans";
-        font-size: 16px !important;
-        font-style: normal;
-        font-weight: 400 !important;
-        line-height: normal;
-        background-color: transparent !important;
-    }
-    .testimonial{
+
+    .testimonial {
         padding: 28px 0;
+
+    }
+
+    .footer {
+        background-color: white;
+        padding-top: 45px !important;
+        padding-bottom: 45px !important;
+    }
+
+    .contactus .custom-input {
+        font-size: 18px !important;
+        font-weight: 500 !important;
+    }
+
+    .contactus .container {
+        padding: 0px 10px !important;
+    }
+
+    .headerimg {
+        width: 200px;
+    }
+
+    nav .hero-btn1 {
+        color: white;
+    }
+
+    nav .container {
+        padding: 0 16px !important;
+    }
+
+    .card {
+        padding: 0 20px;
+    }
+
+    .footer .logo-text {
+        padding-top: 5px;
+    }
+
+    .input {
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+
+    .input:focus {
+        font-size: 16px !important;
+    }
+
+    .card .dollarspecial {
+        color: var(--Heading-color, #0F172A);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 30.409px !important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 44.5px;
+        
     }
 }
