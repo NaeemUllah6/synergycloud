@@ -1,0 +1,1482 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html,
+body,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main_heading {
+    font-size: 56.30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: DM Sans;
+}
+
+.main_paragraph {
+    font-size: 23px;
+    ;
+}
+
+.bg_saturated {
+    background-color: #22739C;
+}
+
+.color_light {
+    color: #22739C;
+}
+
+.carousel_bg {
+    background-color: #22739C;
+}
+
+.container {
+    padding: 0px 40px !important;
+    max-width: 1694px !important;
+    margin: 0 auto !important;
+}
+
+/* ////////////////////////////////////////Navbar /////////////////////////////////////////*/
+.bg_saturated {
+    background-color: #22739C;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+
+nav .nav-link {
+    color: #0F172A;
+    font-family: "DM Sans";
+    font-size: 18.822px;
+    font-weight: 500;
+}
+
+nav .hero-btn {
+    color: white;
+    font-family: "DM Sans";
+    font-size: 18.822px;
+    font-weight: 500;
+    border-radius: 58.82px;
+    border: 2.353px solid #22739C;
+    background-color: #22739C;
+    padding: 7px 18.822px;
+}
+
+nav .hero-btn:hover {
+    color: white;
+    background-color: #3e86aa;
+}
+
+nav .hero-btn1 {
+    color: #22739C;
+    font-family: "DM Sans";
+    font-size: 18.822px;
+    font-weight: 500;
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+.hero-btn {
+    display: flex;
+    color: white;
+    font-weight: 700;
+    padding: 10px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 58.82px;
+    border: 2.353px solid #0B608B;
+    background: #22739C;
+    font-family: DM Sans;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(156, 156, 156);
+        padding-top: 20px;
+        position: absolute;
+        top: 10;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        opacity: 0;
+
+    }
+
+    .navbar-collapse.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    .navbar-toggler {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #22739C;
+        width: 30px;
+        height: 3px;
+        position: relative;
+        display: block;
+        transition: all 0.3s;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        content: '';
+        background-color: #080a0b;
+        width: 30px;
+        height: 3px;
+
+    }
+
+    .navbar-toggler-icon::before {
+        top: -8px;
+    }
+
+    .navbar-toggler-icon::after {
+        bottom: -8px;
+    }
+
+    .navbar-collapse a {
+        padding: 10px 0;
+        display: block;
+        color: white;
+    }
+
+    .navbar-collapse a:hover {
+        color: #22739C;
+    }
+
+    .navbar-collapse .btn {
+        margin: 10px 0;
+    }
+}
+
+/* --------------Hero section ---------------- */
+
+.hero-main {
+    background-image: url('../images/Animation Component.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero-heading {
+    margin-top: 94px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typing {
+    animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
+
+/* //////////////////about///////////////// */
+.missing {
+    color: var(--Blue-Gray-900, var(--Heading-color, #0F172A));
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 21.175px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 33.88px */
+}
+
+.about {
+    padding-top: 284px;
+    padding-bottom: 94px;
+}
+
+.about-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+/* //////////////cards////////////// */
+.cards {
+    padding: 78px 0;
+    background-color: #EEEDF5;
+
+}
+
+.special {
+    display: none;
+}
+
+.cards .p1 {
+    color: #6F6C90;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 21.175px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.292px;
+}
+
+.cards .p2 {
+    color: #170F49;
+    font-family: "DM Sans";
+    font-size: 21.175px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.292px;
+    text-align: center;
+}
+
+.cards .span1 {
+    border-radius: 17px;
+    border: 1px solid #D9DBE9;
+    color: var(--Neutral-800, #170F49);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 23.528px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25.881px;
+
+}
+
+.card {
+    padding: 0 51px;
+    border-radius: 28.233px !important;
+    border: 1.176px solid #EFF0F6;
+
+    box-shadow: 0px 2.353px 14.117px 0px rgba(20, 20, 43, 0.08);
+
+}
+
+
+.card button {
+    display: flex;
+    padding: 18.586px 44.703px;
+    justify-content: center;
+    align-items: center;
+    gap: 7.058px;
+    flex: 1 0 0;
+    border-radius: 112.934px;
+    background: #22739C;
+    margin-top: 43px;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 21.175px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card .basic {
+    color: #170F49;
+    font-family: "DM Sans";
+    font-size: 25.233px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.card .card-text {
+    color: #6F6C90;
+    font-family: "DM Sans";
+    font-size: 14.175px;
+    font-style: normal;
+    font-weight: 500;
+
+
+}
+
+.card .dollar {
+    color: #0F172A;
+    font-family: "DM Sans";
+    font-size: 63.525px;
+    font-style: normal;
+    font-weight: 700;
+
+
+}
+
+.card .monthly {
+    color: #6F6C90;
+    font-family: "DM Sans";
+    font-size: 19.528px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.881px;
+
+}
+
+.card .whatincluded {
+    color: #170F49;
+    font-family: "DM Sans";
+    font-size: 18.175px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23.528px;
+
+}
+
+.cards .user {
+    color: #170F49;
+    font-family: "DM Sans";
+    font-size: 18.175px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23.528px;
+
+}
+
+.card .features {
+    color: #170F49;
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.528px;
+
+}
+
+.blue-card {
+    background-color: #22739C !important;
+    color: white !important;
+}
+
+/* //////////////carousel///////////// */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    gap: 25px;
+    width: calc(100% + 100px);
+    margin-left: -50px;
+    animation: scroll 5s linear infinite;
+    cursor: crosshair;
+}
+
+.carousel-slide {
+    padding: 15px 25px !important;
+    border-radius: 12.705px;
+    background: #EEEDF5;
+    min-width: 395px;
+    max-height: 410px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-20%);
+    }
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.signup input:focus {
+    box-shadow: none;
+}
+
+.carousel .carousel-text1 {
+    color: #413D45;
+    font-family: "DM Sans";
+    font-size: 27.528px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38.115px;
+    letter-spacing: -0.741px;
+}
+
+.last-text-carousel {
+
+
+    justify-content: center;
+    color: #67646A;
+    font-family: "DM Sans";
+    font-size: 13.764px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.058px;
+    letter-spacing: -0.148px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-container:hover .prev,
+.carousel-container:hover .next {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.testimonial p {
+    color: var(--Neutral-600, #6F6C90);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 21.175px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.292px;
+}
+
+.testimonial {
+    padding: 65px 0
+}
+
+/* //////////////signup////////////// */
+.signup {
+    padding: 120px 0;
+    background-color: #EEEEEE;
+}
+
+.signup .input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: transparent;
+    width: 100%;
+    border-bottom: 2px solid #170F49;
+    border-radius: 0px;
+}
+
+.signup label {
+    padding-top: 75px;
+    color: #170F49;
+    font-family: "DM Sans";
+    font-size: 23.528px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.233px;
+    /* 120% */
+}
+
+.special-label {
+    color: #170F49;
+    font-family: "DM Sans";
+    font-size: 28.233px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 34.115px;
+}
+
+.signup button {
+    display: flex;
+    padding: 15.528px 35.233px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 58.82px;
+    border: 2.353px solid #0B608B;
+    background: #22739C;
+    font-weight: 600;
+    color: white;
+    font-family: DM Sans;
+    margin-top: 68px;
+}
+
+/* ///////////////Contact Us////////////////// */
+.contactus {
+    padding: 89px 0;
+    background-color: #f7f7f7;
+
+}
+
+.contact-first {
+    padding: 47px;
+    background-color: #22739C;
+    border-radius: 10px;
+}
+
+.contact-first-col {
+    padding-top: 131px;
+}
+
+.contact-first p {
+    color: #C9C9C9;
+    color: #C9C9C9;
+    font-family: "DM Sans";
+    font-size: 23.528px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-first h2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 35.645px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-first .number {
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 23.176px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.custom-input:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1 solid black;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 23.176px !important;
+
+}
+
+.custom-input {
+    color: #011C2A;
+    font-family: "DM Sans" !important;
+    font-size: 23.176px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 23.528px !important;
+    /* 100% */
+}
+
+.heading {
+    color: #8D8D8D;
+}
+
+.contactus button {
+    display: flex;
+    padding: 23.528px 56.233px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 58.82px;
+    border: 2.353px solid #0B608B;
+    background: #22739C;
+    color: white;
+    font-family: "DM Sans";
+    font-size: 21.175px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 52px;
+}
+
+.message {
+    padding-top: 95px;
+}
+
+/* ///////////////footer////////////// */
+.footer {
+    padding: 45px 0;
+}
+
+.footer .quick {
+    color: var(--primary-900, #0A1A17);
+    font-family: "DM Sans";
+    font-size: 23.528px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.233px;
+    /* 120% */
+}
+
+footer .contact {
+    color: var(--primary-900, #0A1A17);
+    font-family: "DM Sans";
+    font-size: 23.528px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.233px;
+    /* 120% */
+}
+
+.footer .logo-text {
+    color: #0F172A;
+    font-family: "DM Sans";
+    font-size: 16.469px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.175px;
+    /* 128.571% */
+}
+
+.hero button {
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 28.233px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.233px;
+    /* 100% */
+    letter-spacing: 0.588px;
+    display: flex;
+    padding: 17.528px 28.233px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 58.82px;
+    border: 2.353px solid #0B608B;
+    background: #22739C;
+}
+
+/* //////////////////////Responsiveness////////////////////// */
+
+@media screen and (max-width: 1440px) {
+    .missing {
+        font-size: 18px;
+    }
+
+    .main_heading {
+        font-size: 40.30px;
+        font-weight: bold;
+        text-align: center;
+        font-family: DM Sans;
+    }
+
+    .main_paragraph {
+        font-size: 18px;
+        ;
+    }
+
+    .cards {
+        padding: 78px 0;
+        background-color: #EEEDF5;
+
+    }
+
+    .cards .p1 {
+        color: #6F6C90;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35.292px;
+    }
+
+    .cards .p2 {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35.292px;
+        text-align: center;
+    }
+
+    .cards .span1 {
+        border-radius: 17px;
+        border: 1px solid #D9DBE9;
+        color: var(--Neutral-800, #170F49);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25.881px;
+
+    }
+
+    .card {
+        padding: 0 51px;
+        border-radius: 28.233px !important;
+        border: 1.176px solid #EFF0F6;
+
+        box-shadow: 0px 2.353px 14.117px 0px rgba(20, 20, 43, 0.08);
+
+    }
+
+
+    .card button {
+        display: flex;
+        padding: 18.586px 44.703px;
+        justify-content: center;
+        align-items: center;
+        gap: 7.058px;
+        flex: 1 0 0;
+        border-radius: 112.934px;
+        background: #22739C;
+        margin-top: 43px;
+        border: none;
+        color: #FFF;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .card .basic {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 23.233px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .card .card-text {
+        color: #6F6C90;
+        font-family: "DM Sans";
+        font-size: 14.175px;
+        font-style: normal;
+        font-weight: 500;
+
+
+    }
+
+    .card .dollar {
+        color: #0F172A;
+        font-family: "DM Sans";
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .card .monthly {
+        color: #6F6C90;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25.881px;
+
+    }
+
+    .card .whatincluded {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23.528px;
+
+    }
+
+    .cards .user {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23.528px;
+
+    }
+
+    .card .features {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23.528px;
+
+    }
+
+    .blue-card {
+        background-color: #22739C !important;
+        color: white !important;
+    }
+
+    .carousel .carousel-text1 {
+        color: #413D45;
+        font-family: "DM Sans";
+        font-size: 20.528px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 38.115px;
+        letter-spacing: -0.741px;
+    }
+
+    .testimonial p {
+        color: var(--Neutral-600, #6F6C90);
+        text-align: left;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35.292px;
+    }
+
+    .signup label {
+        padding-top: 75px;
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28.233px;
+        /* 120% */
+    }
+
+    .special-label {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 18px !important;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: 34.115px;
+    }
+
+    .contact-first p {
+        color: #C9C9C9;
+        color: #C9C9C9;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .contact-first h2 {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 33.645px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .contact-first .number {
+        color: #FFF;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .custom-input:focus {
+
+        border: 1px solid black !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+
+    }
+
+    .custom-input {
+
+        /* 100% */
+    }
+
+    .heading {
+        color: #8D8D8D;
+    }
+
+    .contactus button {
+        display: flex;
+        padding: 15.528px 40.233px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 58.82px;
+        border: 2.353px solid #0B608B;
+        background: #22739C;
+        color: white;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .message {
+        padding-top: 50px;
+    }
+
+    .contact-first-col {
+        padding-top: 50px;
+    }
+
+    .footer .quick {
+        color: var(--primary-900, #0A1A17);
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28.233px;
+    }
+
+    footer .contact {
+        color: var(--primary-900, #0A1A17);
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28.233px;
+    }
+
+    .footer .logo-text {
+        color: #0F172A;
+        font-family: "DM Sans";
+        font-size: 16.469px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21.175px;
+    }
+}
+
+
+
+
+/* ////////////////////////////////////////////////////////for 521///////////////////////////////////////////////////////////// */
+@media screen and (max-width: 521px) {
+    .main_heading {
+        font-size: 24.30px;
+        font-weight: bold;
+        text-align: center;
+        font-family: DM Sans;
+    }
+
+    .main_paragraph {
+        font-size: 16px;
+        ;
+    }
+
+    .cards {
+        padding: 78px 0;
+        background-color: #EEEDF5;
+
+    }
+
+    .cards .p1 {
+        color: #6F6C90;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.292px;
+    }
+
+    .cards .p2 {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.292px;
+        text-align: center;
+    }
+
+    .cards .span1 {
+        border-radius: 17px;
+        border: 1px solid #D9DBE9;
+        color: var(--Neutral-800, #170F49);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25.881px;
+
+    }
+
+    .card {
+        padding: 0 51px;
+        border-radius: 28.233px !important;
+        border: 1.176px solid #EFF0F6;
+
+        box-shadow: 0px 2.353px 14.117px 0px rgba(20, 20, 43, 0.08);
+
+    }
+
+
+    .card button {
+        display: flex;
+        padding: 9.586px 44.703px;
+        justify-content: center;
+        align-items: center;
+        gap: 7.058px;
+        flex: 1 0 0;
+        border-radius: 112.934px;
+        background: #22739C;
+        margin-top: 43px;
+        border: none;
+        color: #FFF;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .card .basic {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 23.233px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .card .card-text {
+        color: #6F6C90;
+        font-family: "DM Sans";
+        font-size: 12.175px;
+        font-style: normal;
+        font-weight: 500;
+
+
+    }
+
+    .card .dollar {
+        color: #0F172A;
+        font-family: "DM Sans";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .card .monthly {
+        color: #6F6C90;
+        font-family: "DM Sans";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25.881px;
+
+    }
+
+    .card .whatincluded {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23.528px;
+
+    }
+
+    .cards .user {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23.528px;
+
+    }
+
+    .card .features {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23.528px;
+
+    }
+
+    .blue-card {
+        background-color: #22739C !important;
+        color: white !important;
+    }
+
+    .carousel .carousel-text1 {
+        color: #413D45;
+        font-family: "DM Sans";
+        font-size: 20.528px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 38.115px;
+        letter-spacing: -0.741px;
+    }
+
+    .testimonial p {
+        color: var(--Neutral-600, #6F6C90);
+        text-align: left;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35.292px;
+    }
+
+    .signup label {
+        padding-top: 75px;
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28.233px;
+        /* 120% */
+    }
+
+    .special-label {
+        color: #170F49;
+        font-family: "DM Sans";
+        font-size: 18px !important;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: 34.115px;
+    }
+
+    .contact-first {
+        padding: 16px;
+    }
+
+    .contact-first-col {
+        padding-top: 0px !important;
+    }
+
+    .row-gap-5 {
+        row-gap: 0px !important;
+    }
+
+    .signup {
+        padding: 30px 0;
+    }
+
+    .contact-first p {
+        color: #C9C9C9;
+        color: #C9C9C9;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .contact-first h2 {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 20.645px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-left: 0px !important;
+    }
+
+    .contact-first .number {
+        color: #FFF;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0px !important;
+    }
+
+    .custom-input:focus {
+
+        border: 1px solid black !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+
+    }
+
+    .custom-input {
+
+        /* 100% */
+    }
+
+    .heading {
+        color: #8D8D8D;
+
+        font-family: "DM Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23.528px;
+        /* 117.639% */
+    }
+
+    .contactus button {
+        display: flex;
+        padding: 15.528px 40.233px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 58.82px;
+        border: 2.353px solid #0B608B;
+        background: #22739C;
+        color: white;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 8px;
+    }
+
+    .heading {
+        font-size: 20px !important;
+    }
+
+    .message {
+        padding-top: 50px;
+    }
+
+    .contact-first-col {
+        padding-top: 50px;
+    }
+
+    .footer .quick {
+        color: var(--primary-900, #0A1A17);
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28.233px;
+    }
+
+    footer .contact {
+        color: var(--primary-900, #0A1A17);
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28.233px;
+    }
+
+    .footer .logo-text {
+        color: #0F172A;
+        font-family: "DM Sans";
+        font-size: 16.469px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21.175px;
+    }
+
+    .special {
+        display: block;
+
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .span1 {
+        display: none;
+
+    }
+
+    .user {
+        font-size: 12px !important;
+    }
+
+    .custom-input {
+        width: 100% !important;
+    }
+
+    .about-flex {
+        grid-template-columns: 1fr;
+
+    }
+
+    .item2 {
+        order: 2;
+    }
+
+    .item1 {
+        order: 1;
+    }
+
+    .about {
+        padding-top: 45px;
+        padding-bottom: 10px;
+    }
+    .about .main_paragraph{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .about-flex{
+        gap: 0px;
+    }
+    .hero-main img {
+        transform: translateY(35px) !important;
+        width: 100% !;
+    }
+    .cards{
+        padding: 20px 0;
+    }
+
+    .card button {
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: 400px;
+    }
+
+    .padding-special {
+        padding-top: 10px;
+    }
+
+    .contactus button {
+        display: flex;
+        padding: 6px 16px;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .signup button {
+        display: flex;
+        padding: 6px 16px;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .signup {
+        background-color: white;
+        padding: 10px 0;
+    }
+    .signup button {
+       margin-top: 35px    
+    }
+
+    .hero button {
+        padding: 6px 28px;
+        font-size: 18px;
+    }
+
+    .signup img {
+        margin-top: 49px;
+    }
+    .contactus .white-row{
+        background-color: transparent !important;
+    }
+
+
+    .input-mine {
+        padding-top: 10px;
+    }
+
+    .heading {
+        color: black;
+    }
+
+    .signup label {
+        padding-top: 30px;
+    }
+
+    .carousel .carousel-text1 {
+        color: #413D45;
+        font-family: "DM Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16.85px;
+        /* 140.419% */
+        letter-spacing: -0.328px;
+    }
+
+    .testimonial p {
+        color: #67646A;
+        font-family: "DM Sans";
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 8.425px;
+        /* 105.314% */
+        letter-spacing: -0.066px;
+    }
+
+    .carousel-slide {
+        min-width: 200px !important;
+        height: 250px;
+    }
+
+    .contactus {
+        padding: 40px 0;
+    }
+
+    .footer img {
+        margin: 0px !important;
+    }
+
+    .custom-input {
+        color: #011C2A;
+        font-family: "DM Sans";
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: normal;
+        background-color: transparent !important;
+    }
+    .testimonial{
+        padding: 28px 0;
+    }
+}
