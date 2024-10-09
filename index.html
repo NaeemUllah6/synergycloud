@@ -34,22 +34,22 @@
 
                     </a>
                 </div>
-                <div class="d-none d-md-flex justify-content-center align-items-center flex-grow-1">
+                <div class="menu1  justify-content-center align-items-center flex-grow-1">
                     <div class="d-flex gap-4">
                         <a class="nav-link" href="#about">About Us</a>
                         <a class="nav-link" href="#pricing">Pricing</a>
                         <a class="nav-link" href="#testimonial">Testimonial</a>
-                        <a class="nav-link" href="#signup">Contact Us</a>
+                        <a class="nav-link" href="#contactus">Contact Us</a>
 
                     </div>
 
                 </div>
-                <div class="d-none d-md-block">
-                    <button class="btn hero-btn1">Login</button>
-                    <button class="btn hero-btn bg_saturated">Signup</button>
+                <div class="loginbuttons">
+                    <button href="" class="btn hero-btn1">Login</button>
+                    <a href="#signup"> <button href="" class="btn hero-btn bg_saturated">Signup</button></a>
                 </div>
                 <div>
-                    <img src="./assets/images/menu.svg" class="navbar-toggler d-md-none" type="button"
+                    <img src="./assets/images/menu.svg" class="navbar-toggler " type="button"
                         data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                         aria-expanded="false" aria-label="Toggle navigation">
 
@@ -58,12 +58,12 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="d-flex flex-column align-items-center">
-                    <a class="nav-link" href="">About Us</a>
-                    <a class="nav-link" href="">Pricing</a>
-                    <a class="nav-link" href="">Testimonial</a>
-                    <a class="nav-link" href="">Contact Us</a>
+                    <a class="nav-link" href="#about">About Us</a>
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                    <a class="nav-link" href="#contactus">Contact Us</a>
                     <button class="btn hero-btn1">Login</button>
-                    <button class="btn hero-btn bg_saturated">Signup</button>
+                    <a href="#signup"><button class="btn hero-btn bg_saturated">Signup</button></a>
                 </div>
             </div>
         </div>
@@ -433,7 +433,7 @@
                     <div class="card py-4">
                         <div class="d-flex align-items-start gap-3">
                             <div class="d-flex justify-content-center align-items-center"
-                                style="width: 84px; height: 84px;border-radius: 18px; background-color: #ECEBFF;">
+                                style="width: 84px; height: 84px;border-radius: 18px; background-color: #ECEBFF; padding: 12px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 51 54"
                                     fill="none">
                                     <path
@@ -617,12 +617,10 @@
                         <div>
                             <img src="assets/images/icons/colon.png" alt="">
                             <p class="carousel-text1 text-start">Our remote team finally feels connected. The channels
-                                and
-                                integrations make it so easy to keep everyone on the same page!</p>
+                                and integrations make it so easy to keep everyone on the same page!</p>
                         </div>
                         <div>
-                            <p class="">Rachael, UK
-                                Sara K., Maing Director</p>
+                            <p class="">Sara K., Marketing Director</p>
                         </div>
                     </div>
                 </div>
@@ -644,13 +642,12 @@
                     <div class=" d-flex flex-column justify-content-between h-100">
                         <div>
                             <img src="assets/images/icons/colon.png" alt="">
-                            <p class="carousel-text1 text-start">Our remote team finally feels connected. The channels
-                                and
-                                integrations make it so easy to keep everyone on the same page!</p>
+                            <p class="carousel-text1 text-start">This platform transformed the way our team
+                                communicates! Collaboration has never been smoother, and our productivity has
+                                skyrocketed.</p>
                         </div>
                         <div>
-                            <p class="">Rachael, UK
-                                Sara K., Maing Director</p>
+                            <p class="">Emily.R, Project Manager</p>
                         </div>
                     </div>
                 </div>
@@ -754,7 +751,7 @@
         </div>
     </section>
 
-    <section class="contactus">
+    <section class="contactus" id="contactus">
         <div class="container">
             <div class="row bg-white white-row rounded p-3 align-items-center">
                 <div class="col-12 col-md-5 col-lg-col-5 p-0 ">
@@ -829,7 +826,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-6 padding-special pt-0">
+                        <div class="col-12 col-md-6 col-lg-6 padding-special pt-0" id="contactus">
                             <div class="d-flex flex-column ">
                                 <div class="input-mine ">
                                     <h2 class="heading">Last Name</h2>

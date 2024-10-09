@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const currencySpans = document.querySelectorAll('.currency-symbol');
         currencySpans.forEach((span, index) => {
             if (index < convertedAmounts.length) {
-                span.textContent = `${currencySymbol}${convertedAmounts[index].toFixed(1)}`;
+                span.textContent = `${currencySymbol}${convertedAmounts[index].toFixed(0)}`;
             }
         });
     }

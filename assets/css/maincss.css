@@ -118,12 +118,21 @@ nav .hero-btn1 {
     background: #22739C;
     font-family: DM Sans;
 }
+.navbar-toggler{
+    display: none;
+}
+.menu1{
+    display: block;
+    display: flex;
+}
+.loginbuttons{
+    display: block;
+}
 
 
-@media (max-width: 768px) {
+@media (max-width:  991px) {
     .navbar-collapse {
         display: block;
-        /* Keep it block but control height */
         flex-direction: column;
         text-align: center;
         background-color: hsl(212.37deg 62.23% 21.67% / 83%);
@@ -134,11 +143,24 @@ nav .hero-btn1 {
         right: 0;
         z-index: 5;
         height: 0;
-        /* Initially collapsed */
+       
         overflow: hidden;
-        /* Hide content when collapsed */
+      
         transition: height 1s ease, opacity 1s ease;
         opacity: 0;
+    }
+    .main_heading{
+        max-width: 653px;
+        margin: 0 auto;
+    }
+    .loginbuttons{
+       display: none;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .menu1{
+        display: none;
     }
 
     .navbar-collapse.active {
@@ -1605,5 +1627,8 @@ footer .contact {
         line-height: normal;
         display: block;
         min-height: 35px;
+    }
+    .main_heading{
+        width: 100%;
     }
 }
