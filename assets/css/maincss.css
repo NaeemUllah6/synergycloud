@@ -209,24 +209,24 @@ nav .hero-btn1 {
     margin-top: 94px;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
+/* //////////////////typing animations///////////////// */
+.typing-effect {
+    color: #1E719B;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 56.467px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 62.113px */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: caret 0.75s step-end infinite;
 }
 
-@keyframes blink {
+@keyframes caret {
     50% {
         border-color: transparent;
     }
-}
-
-.typing {
-    animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
 }
 
 /* //////////////////about///////////////// */
@@ -732,6 +732,9 @@ footer .contact {
     }
     .hero-first{
         transform: translateY(94px);
+    }
+    .typing-effect{
+        font-size: 40px;
     }
 
     .main_heading {
@@ -1591,5 +1594,16 @@ footer .contact {
     }
     .card .whatincluded{
         padding-bottom: 0px !important;
+    }
+    .typing-effect{
+        color: #1E719B;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: block;
+        min-height: 35px;
     }
 }
