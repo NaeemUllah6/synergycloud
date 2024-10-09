@@ -202,7 +202,9 @@ nav .hero-btn1 {
     background-size: cover;
 
 }
-
+.hero-first{
+    transform: translateY(94px);
+}
 .hero-heading {
     margin-top: 94px;
 }
@@ -713,7 +715,9 @@ footer .contact {
     .missing {
         font-size: 18px;
     }
-
+    .hero-first{
+        transform: translateY(94px) !important;
+    }
 
     .main_heading {
         font-size: 40.30px;
