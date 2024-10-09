@@ -128,7 +128,9 @@ nav .hero-btn1 {
 .loginbuttons{
     display: block;
 }
-
+/* .paddingspecial2{
+    padding: 88px 0;
+} */
 
 @media (max-width:  991px) {
     .navbar-collapse {
@@ -600,6 +602,12 @@ border-radius: 5px;
     padding: 89px 0;
     background-color: #f7f7f7;
 
+}
+.contact-first::after{
+    content: url('../images/Group\ 1000001771.png');
+    position: absolute;
+    right: 0;
+    bottom: -2;
 }
 
 .contact-first {
@@ -1630,5 +1638,12 @@ footer .contact {
     }
     .main_heading{
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .footerlogo{
+        width: 200px ;
+        height: auto;
     }
 }
