@@ -388,6 +388,18 @@ nav .hero-btn1 {
     line-height: 23.528px;
 
 }
+.popular{
+    color: var(--Neutral-100, #FFF);
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "DM Sans";
+font-size: 9.439px;
+font-style: normal;
+font-weight: 400;
+line-height: 9.439px; 
+background-color:#7798b6;
+padding: 8px 16px;
+border-radius: 5px;
+}
 
 .card .features {
     color: #170F49;
@@ -522,8 +534,9 @@ nav .hero-btn1 {
     border-right: 0;
     background-color: transparent;
     width: 100%;
-    border-bottom: 2px solid #170F49;
+    border-bottom: 1px solid #170F49;
     border-radius: 0px;
+    padding-left: 0px;
 }
 
 .signup label {
@@ -708,7 +721,9 @@ footer .contact {
 .footer {
     background-color: #f7f7f7;
 }
-
+.footer .footer-heading{
+    font-size: 28px;
+}
 /* //////////////////////Responsiveness////////////////////// */
 
 @media screen and (max-width: 1440px) {
@@ -716,7 +731,7 @@ footer .contact {
         font-size: 18px;
     }
     .hero-first{
-        transform: translateY(94px) !important;
+        transform: translateY(94px);
     }
 
     .main_heading {
@@ -1013,6 +1028,9 @@ footer .contact {
         font-weight: 400;
         line-height: 21.175px;
     }
+    .footer .footer-heading {
+        font-size: 25px;
+    }
 }
 
 
@@ -1115,6 +1133,8 @@ footer .contact {
         font-size: 12.175px;
         font-style: normal;
         font-weight: 500;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
 
 
     }
@@ -1400,13 +1420,13 @@ footer .contact {
     }
 
     .card button {
-        padding: 10px 30px;
+        padding: 17px 25px;
         font-size: 16px;
         font-weight: 400px;
     }
 
     .padding-special {
-        padding-top: 10px;
+        padding-top: 39px;
     }
 
     .contactus button {
@@ -1440,7 +1460,7 @@ footer .contact {
     }
 
     .signup img {
-        margin-top: 49px;
+        margin-top: 59px;
     }
 
     .contactus .white-row {
@@ -1483,7 +1503,7 @@ footer .contact {
     }
 
     .carousel-slide {
-        min-width: 200px !important;
+        min-width: 240px !important;
         height: 250px;
     }
 
@@ -1561,5 +1581,15 @@ footer .contact {
     }
     .signup .withcontainer{
         padding: 0 40px;
+    }
+    .hero-first{
+        transform: translateY(0px);
+    }
+    .carousel-slide img{
+        width: 35px;
+        height: 37px;
+    }
+    .card .whatincluded{
+        padding-bottom: 0px !important;
     }
 }
