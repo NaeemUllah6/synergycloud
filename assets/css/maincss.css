@@ -128,9 +128,9 @@ nav .hero-btn1 {
 .loginbuttons{
     display: block;
 }
-/* .paddingspecial2{
+.paddingspecial2{
     padding: 88px 0;
-} */
+}
 
 @media (max-width:  991px) {
     .navbar-collapse {
