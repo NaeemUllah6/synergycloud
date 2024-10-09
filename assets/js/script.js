@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const DEFAULT_CURRENCY = 'GBP'; // Default currency
-    const DEFAULT_CURRENCY_SYMBOL = '£'; // Default currency symbol
-    const currentCurrencyValues = ['6', '12', '20']; // Current currency values in pounds
+    const DEFAULT_CURRENCY = 'GBP'; 
+    const DEFAULT_CURRENCY_SYMBOL = '£';
+    const currentCurrencyValues = ['6', '12', '20']; 
 
     async function getPublicIP() {
         try {
